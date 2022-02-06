@@ -22,21 +22,32 @@ function Navbar() {
             ) : (
                 <div>
                     <div className="nav-container">
-                        <div className="navbar">
-                            <Link className="logo nav-item" to="/">
-                                PFOTHERGILL
+                        <div className="logo-container util-nav-container-left">
+                            <Link className="logo-font logo" to="/">
+                                {/* <img src="src/static/img/logo-transparent.png" /> */}
+                                {/* <img className="logo-img" src="./logo-transparent.png" alt="pfothergill.com logo"/> */}
+
+                                P|fothergill
+
                             </Link>
+                        </div>
+
+                        <div className="navbar">
+
                             <Link className="nav-item" to="/about">
                                 About
                             </Link>
                             <Link className="nav-item" to="/contact">
                                 Contact
                             </Link>
-                            <Link className="nav-item util-margin-right-2" to="/faq">
+                            <Link className="nav-item" to="/faq">
                                 FAQ
                             </Link>
+                            <div className='nav-item toggle-container util-nav-container-right'>
+                                <CustomDarkModeToggle />
+                            </div>
                         </div>
-                        <CustomDarkModeToggle />
+
                     </div>
                 </div>
             )}

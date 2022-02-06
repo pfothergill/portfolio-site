@@ -1,4 +1,12 @@
-function About() {
-  return <div>About us</div>
+import { Typography } from "@material-ui/core";
+
+function Contact() {
+  return (
+    <Typography>
+      <div className="container">
+        <h1>About me</h1>
+      </div>
+    </Typography>
+  );
 }
-export default About;
+export default Contact;

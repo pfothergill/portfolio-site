@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "FloodStd";
+  src: local("FloodStd"),
+   url("./fonts/FloodStd/FloodStd.otf") format("opentype");
+  font-weight: bold;
+  }
+
 body {
   margin: 0;
   box-sizing: border-box;
