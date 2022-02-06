@@ -35,25 +35,31 @@ body.dark-mode {
   }
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 4.5em;
- 
-  .logo {
-    margin-right: auto;
+.nav-container {
+  position: relative;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5em;
   }
 
   .nav-item {
     text-decoration: none;
-    margin-left: 4em;
+    margin-left: 3em;
     font-size: 24px;
   }
 
-  .toggle {
-    margin-left: 4em;
+  .toggle-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 4.5em;
   }
+
 }
 
 .toggle-btn {

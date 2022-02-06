@@ -21,19 +21,21 @@ function Navbar() {
                 <DrawerComponent />
             ) : (
                 <div>
-                    <div className="navbar">
-                        <Link className="logo nav-item" to="/">
-                            PFOTHERGILL
-                        </Link>
-                        <Link className="nav-item" to="/about">
-                            About
-                        </Link>
-                        <Link className="nav-item" to="/contact">
-                            Contact
-                        </Link>
-                        <Link className="nav-item util-margin-right-2" to="/faq">
-                            FAQ
-                        </Link>
+                    <div className="nav-container">
+                        <div className="navbar">
+                            <Link className="logo nav-item" to="/">
+                                PFOTHERGILL
+                            </Link>
+                            <Link className="nav-item" to="/about">
+                                About
+                            </Link>
+                            <Link className="nav-item" to="/contact">
+                                Contact
+                            </Link>
+                            <Link className="nav-item util-margin-right-2" to="/faq">
+                                FAQ
+                            </Link>
+                        </div>
                         <CustomDarkModeToggle />
                     </div>
                 </div>
