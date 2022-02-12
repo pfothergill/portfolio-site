@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio-site/static/css/main.ca0c7799.css",
+    "main.js": "/portfolio-site/static/js/main.aeee40c6.js",
+    "static/media/FloodStd.otf": "/portfolio-site/static/media/FloodStd.d99f3733575ebd03f2f0.otf",
+    "index.html": "/portfolio-site/index.html",
+    "main.ca0c7799.css.map": "/portfolio-site/static/css/main.ca0c7799.css.map",
+    "main.aeee40c6.js.map": "/portfolio-site/static/js/main.aeee40c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca0c7799.css",
+    "static/js/main.aeee40c6.js"
+  ]
+}
