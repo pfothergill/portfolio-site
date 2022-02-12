@@ -15,12 +15,12 @@ import MenuIcon from "@material-ui/icons/Menu";
 const useStyles = makeStyles(() => ({
     link: {
         textDecoration: "none",
-        color: "blue",
+        color: "black",
         fontSize: "20px",
     },
     icon: {
-        color: "white"
-    }
+        color: "white",
+    },
 }));
 
 function DrawerComponent() {
@@ -29,37 +29,49 @@ function DrawerComponent() {
     return (
         <>
             <Drawer
+                className="MuiAppBar-colorPrimary"
                 open={openDrawer}
                 onClose={() => setOpenDrawer(false)}
             >
                 <List>
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
-                            <Link to="/" className={classes.link}>Home</Link>
+                            <Link to="/" className={classes.link}>
+                                Home
+                            </Link>
                         </ListItemText>
                     </ListItem>
                     <Divider />
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
-                            <Link to="/about" className={classes.link}>About</Link>
+                            <Link to="/about" className={classes.link}>
+                                About
+                            </Link>
                         </ListItemText>
                     </ListItem>
                     <Divider />
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
-                            <Link to="/contact" className={classes.link}>Contact</Link>
+                            <Link to="/contact" className={classes.link}>
+                                Contact
+                            </Link>
                         </ListItemText>
                     </ListItem>
                     <Divider />
                     <ListItem onClick={() => setOpenDrawer(false)}>
                         <ListItemText>
-                            <Link to="/about" className={classes.link}>Faq</Link>
+                            <Link to="/faq" className={classes.link}>
+                                Faq
+                            </Link>
                         </ListItemText>
                     </ListItem>
                     <Divider />
                 </List>
             </Drawer>
-            <IconButton onClick={() => setOpenDrawer(!openDrawer)} className={classes.icon}>
+            <IconButton
+                onClick={() => setOpenDrawer(!openDrawer)}
+                className={classes.icon}
+            >
                 <MenuIcon />
             </IconButton>
         </>

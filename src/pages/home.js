@@ -1,6 +1,11 @@
-import { Typography } from "@material-ui/core";
-
-function About() {
-  return <Typography>This is the homepage</Typography>;
+function Home() {
+    return (
+        <div class="row content homepage">
+            <div>
+                <h1>Under construction</h1>
+                <p>Please check back soon!</p>
+            </div>
+        </div>
+    );
 }
-export default About;
+export default Home;

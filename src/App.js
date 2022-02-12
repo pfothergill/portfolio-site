@@ -5,7 +5,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Faq from "./pages/faq";
-import './styles/style.scss';
+import "./styles/style.scss";
 
 function App() {
     return (
@@ -18,7 +18,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/faq" element={<Faq />} />
             </Routes>
-
+            <div className="row footer">PFOTHERGILL.COM ©2022</div>
         </BrowserRouter>
     );
 }

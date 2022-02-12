@@ -4,8 +4,27 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+#root .row.header {
+  flex: 0 1 auto;
+}
+
+#root .row.content {
+  flex: 1 1 auto;
+}
+
+#root .row.footer {
+  flex: 0 1 40px;
 }
 
 .MuiPaper-elevation4 {
@@ -20,8 +39,27 @@ body.light-mode {
   .logo-font {
     color: black;
   }
+
   .navbar {
     background-color: #fff;
+  }
+
+  .MuiAppBar-colorPrimary {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+  .makeStyles-icon-2 {
+    color: #000 !important;
+  }
+}
+
+.nav-drawer {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    margin-right: auto;
   }
 }
 
@@ -33,12 +71,51 @@ body.dark-mode {
     background-color: #23282c;
   }
 
+  .footer {
+    background-color: #23282c;
+  }
+
   .nav-item {
     color: white;
   }
 
   .logo-font {
-    color: white
+    color: white;
+  }
+
+  .MuiAppBar-colorPrimary {
+    color: #fff !important;
+    background-color: #23282c !important;
+  }
+
+  .MuiPaper-root {
+    background-color: #23282c !important;
+  }
+
+  .makeStyles-link-1 {
+    color: #fff !important;
+  }
+
+
+}
+
+.nav-drawer {
+  .logo {
+    margin-right: auto;
+  }
+
+  .drawer-toggle {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+  }
+
+  padding-left: 12px;
+
+  .logo-font {
+    font-family: "FloodStd", sans-serif;
+    text-decoration: none;
+    font-size: 24px;
   }
 }
 
@@ -75,11 +152,6 @@ body.dark-mode {
     font-size: 32px;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
   .logo-container {
     position: absolute;
     display: flex;
@@ -97,8 +169,6 @@ body.dark-mode {
   margin-left: auto;
   margin-right: 1.25em;
 }
-
-
 
 .container {
   margin: 0 300px;
@@ -146,4 +216,52 @@ body.dark-mode .content a {
 
 body.dark-mode .content button {
   color: #ee09;
+}
+
+.row.content {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+}
+
+.row.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  // do something again
 }
