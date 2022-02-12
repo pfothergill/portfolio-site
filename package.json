@@ -1,5 +1,6 @@
 {
-  "name": "website",
+  "name": "portfolio-site",
+  "homepage": "https://pfothergill.github.io/portfolio-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
