@@ -1,0 +1,36 @@
+body.light-mode {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease;
+
+    .logo-font {
+        color: black;
+    }
+
+    .navbar {
+        background-color: #fff;
+    }
+
+    .MuiAppBar-colorPrimary {
+        color: #000 !important;
+        background-color: #fff !important;
+    }
+
+    .makeStyles-icon-2 {
+        color: #000 !important;
+    }
+
+    .jss2 {
+        color: #000 !important;
+    }
+
+    .logo-font-1,
+    .logo-font-2,
+    .logo-seperator {
+        color: #000;
+    }
+
+    .logo-font-1 {
+        border-right: 1px solid #000;
+    }
+}

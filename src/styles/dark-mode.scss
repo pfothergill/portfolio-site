@@ -1,0 +1,59 @@
+body.dark-mode {
+    background-color: #10171d;
+    color: #dfdfdf;
+
+    .navbar {
+        background-color: #23282c;
+    }
+
+    .footer {
+        background-color: #23282c;
+    }
+
+    .nav-item {
+        color: white;
+    }
+
+    .logo-font {
+        color: white;
+    }
+
+    .MuiAppBar-colorPrimary {
+        color: #fff !important;
+        background-color: #23282c !important;
+    }
+
+    .MuiPaper-root {
+        background-color: #23282c !important;
+    }
+
+    .makeStyles-link-1 {
+        color: #fff !important;
+    }
+
+    .jss1 {
+        color: #fff !important;
+    }
+
+    .logo-font-1,
+    .logo-font-2,
+    .logo-seperator {
+        color: #fff;
+    }
+
+    .logo-font-1 {
+        border-right: 1px solid #fff;
+    }
+}
+
+body.dark-mode .content code {
+    background-color: #1b2938;
+}
+
+body.dark-mode .content a {
+    color: #ee09;
+}
+
+body.dark-mode .content button {
+    color: #ee09;
+}

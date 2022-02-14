@@ -1,4 +1,7 @@
 @use "./utils";
+@use "./light-mode";
+@use "./dark-mode";
+@import url("https://use.typekit.net/wub4uxm.css");
 
 html,
 body {
@@ -31,33 +34,6 @@ body {
   box-shadow: none !important;
 }
 
-body.light-mode {
-  background-color: #fff;
-  color: #333;
-  transition: background-color 0.3s ease;
-
-  .logo-font {
-    color: black;
-  }
-
-  .navbar {
-    background-color: #fff;
-  }
-
-  .MuiAppBar-colorPrimary {
-    color: #000 !important;
-    background-color: #fff !important;
-  }
-
-  .makeStyles-icon-2 {
-    color: #000 !important;
-  }
-
-  .jss2 {
-    color: #000 !important;
-  }
-}
-
 .nav-drawer {
   display: flex;
   align-items: center;
@@ -67,46 +43,73 @@ body.light-mode {
   }
 }
 
-body.dark-mode {
-  background-color: #10171d;
-  color: #dfdfdf;
+.nav-container {
+  .logo-link {
+    text-decoration: none;
 
-  .navbar {
-    background-color: #23282c;
+    .logo-container-2 {
+
+      line-height: 2em;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .logo-font-1,
+      .logo-font-2 {
+        font-family: flood-std, sans-serif;
+        font-style: normal;
+        height: 100%;
+      }
+
+      .logo-font-1 {
+        font-weight: 400;
+        padding: 0.2em;
+      }
+
+      .logo-font-2 {
+        font-weight: 100;
+        letter-spacing: 16px;
+      }
+    }
+
   }
-
-  .footer {
-    background-color: #23282c;
-  }
-
-  .nav-item {
-    color: white;
-  }
-
-  .logo-font {
-    color: white;
-  }
-
-  .MuiAppBar-colorPrimary {
-    color: #fff !important;
-    background-color: #23282c !important;
-  }
-
-  .MuiPaper-root {
-    background-color: #23282c !important;
-  }
-
-  .makeStyles-link-1 {
-    color: #fff !important;
-  }
-
-  .jss1 {
-    color: #fff !important;
-  }
-
 }
 
+
+
 .nav-drawer {
+  .logo-link {
+    text-decoration: none;
+
+    .logo-container-2 {
+
+      line-height: 2em;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      .logo-font-1,
+      .logo-font-2 {
+        font-family: flood-std, sans-serif;
+        font-style: normal;
+        height: 100%;
+      }
+
+      .logo-font-1 {
+        font-weight: 400;
+        font-size: 24px;
+        padding: 0.3em;
+      }
+
+      .logo-font-2 {
+        font-weight: 100;
+        font-size: 8px;
+        letter-spacing: 16px;
+      }
+    }
+
+  }
+
   .logo {
     margin-right: auto;
   }
@@ -118,12 +121,6 @@ body.dark-mode {
   }
 
   padding-left: 12px;
-
-  .logo-font {
-    font-family: "FloodStd", sans-serif;
-    text-decoration: none;
-    font-size: 24px;
-  }
 }
 
 .nav-container {
@@ -153,10 +150,12 @@ body.dark-mode {
     height: 3em;
   }
 
-  .logo-font {
-    font-family: "FloodStd", sans-serif;
-    text-decoration: none;
-    font-size: 32px;
+  .logo-font-1 {
+    font-size: 64px;
+  }
+
+  .logo-font-2 {
+    font-size: 11px;
   }
 
   .logo-container {
@@ -213,22 +212,9 @@ body.dark-mode {
   }
 }
 
-body.dark-mode .content code {
-  background-color: #1b2938;
-}
-
-body.dark-mode .content a {
-  color: #ee09;
-}
-
-body.dark-mode .content button {
-  color: #ee09;
-}
-
 .row.content {
   display: flex;
   flex-direction: column;
-
 }
 
 .homepage {
@@ -264,8 +250,9 @@ body.dark-mode .content button {
 
 @media only screen and (max-width: 576px) {
   .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
   }
 }
 

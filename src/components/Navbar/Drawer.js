@@ -29,6 +29,7 @@ function DrawerComponent() {
     return (
         <>
             <Drawer
+                anchor={"right"}
                 className="MuiAppBar-colorPrimary"
                 open={openDrawer}
                 onClose={() => setOpenDrawer(false)}
