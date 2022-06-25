@@ -1,25 +1,21 @@
 body.dark-mode {
     background-color: #10171d;
-    color: #dfdfdf;
+    color: #c7e5f7;
 
     .navbar {
-        background-color: #23282c;
-    }
-
-    .footer {
-        background-color: #23282c;
+        background-color: #10171D;
     }
 
     .nav-item {
-        color: white;
+        color: #c7e5f7;
     }
 
     .logo-font {
-        color: white;
+        color: #c7e5f7;
     }
 
     .MuiAppBar-colorPrimary {
-        color: #fff !important;
+        color: #c7e5f7 !important;
         background-color: #23282c !important;
     }
 
@@ -28,25 +24,25 @@ body.dark-mode {
     }
 
     .makeStyles-link-1 {
-        color: #fff !important;
+        color: #c7e5f7 !important;
     }
 
     .jss1 {
-        color: #fff !important;
+        color: #c7e5f7 !important;
     }
 
     .logo-font-1,
     .logo-font-2,
     .logo-seperator {
-        color: #fff;
+        color: #c7e5f7;
     }
 
     .logo-font-1 {
-        border-right: 1px solid #fff;
+        border-right: 1px solid #c7e5f7;
     }
 }
 
-body.dark-mode .content code {
+body.dark-mode .content .footer code {
     background-color: #1b2938;
 }
 

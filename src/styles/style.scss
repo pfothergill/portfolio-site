@@ -3,6 +3,10 @@
 @use "./dark-mode";
 @import url("https://use.typekit.net/wub4uxm.css");
 
+*{
+  transition: background-color 0.3s ease;
+}
+
 html,
 body {
   margin: 0;
