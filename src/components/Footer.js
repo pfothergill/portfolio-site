@@ -7,7 +7,7 @@ function Footer() {
 
     return (
         <div className="row footer">
-            <b>PFOTHERGILL.COM ©2022</b>
+            <b>PFOTHERGILL.COM ©2026</b>
         </div>
     );
 }
