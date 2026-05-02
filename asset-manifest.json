@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6279269c.css",
+    "main.js": "/static/js/main.7e0112bd.js",
+    "static/media/FloodStd.otf": "/static/media/FloodStd.d99f3733575ebd03f2f0.otf",
+    "index.html": "/index.html",
+    "main.6279269c.css.map": "/static/css/main.6279269c.css.map",
+    "main.7e0112bd.js.map": "/static/js/main.7e0112bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6279269c.css",
+    "static/js/main.7e0112bd.js"
+  ]
+}
