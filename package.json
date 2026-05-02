@@ -12,6 +12,7 @@
     "gh-pages": "^3.2.3",
     "react": "^16.8.0",
     "react-dark-mode-toggle": "^0.2.0",
+    "react-dark-mode-toggle-2": "^2.1.1",
     "react-dom": "^16.8.0",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
